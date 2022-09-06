@@ -20,7 +20,7 @@ function App() {
 
   const refreshWeather = async () => {
     await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=9d2685a56d4c4cfc9c3154155220509&q=${lat},${lon}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=9d2685a56d4c4cfc9c3154155220509&q=${lat},${lon}&aqi=no`
     )
       .then((res) => res.json())
       .then((data) => {
