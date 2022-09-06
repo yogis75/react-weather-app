@@ -1,7 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 10px;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Montserrat", "Helvetica Neue", sans-serif;
   margin: 0;
+  background-color: aliceblue;
 }
 
 .App {
@@ -16,8 +29,46 @@ body {
   border-radius: 10px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
-  min-height: 300px;
-  background: linear-gradient(to bottom, #657282, #87a0b5);
+  min-height: 270px;
+  background: linear-gradient(120deg, #505050, #707070);
   color: #fff;
-  min-width: 600px;
+  min-width: 480px;
+  position: relative;
+  display: flex;
+}
+
+.app--container_refreshImg {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  cursor: pointer;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+.app--container_refreshImg:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.app--container_info {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location--container {
+  text-align: right;
+}
+
+.imgtemp--container {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  justify-content: space-evenly;
+}
+
+.small--text {
+  font-size: 14px;
 }
