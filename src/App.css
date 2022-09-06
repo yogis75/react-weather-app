@@ -1,7 +1,23 @@
-.hidden {
-  display: none;
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 
-.show {
-  display: inline-block;
+.App {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app--container {
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  min-height: 300px;
+  background: linear-gradient(to bottom, #657282, #87a0b5);
+  color: #fff;
+  min-width: 600px;
 }

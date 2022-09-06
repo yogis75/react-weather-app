@@ -30,17 +30,19 @@ function App() {
 
   return (
     <div className="App">
-      {data.location && (
-        <div>
-          <h1>{data.location.name}</h1>
-          <p>{data.location.localtime}</p>
-          <div className="tooltip">
-            <img src={data.current.condition.icon} alt="" />
+      <div className="app--container">
+        {data.location && (
+          <div>
+            <h1>{data.location.name}</h1>
+            <p>{data.location.localtime}</p>
+            <div className="tooltip">
+              <img src={data.current.condition.icon} alt="" />
+            </div>
+            <p>Current Temp: {data.current.temp_c}&#8451;</p>
+            <p>Feels like: {data.current.feelslike_c}&#8451;</p>
           </div>
-          <p>Current Temp: {data.current.temp_c}&#8451;</p>
-          <p>Feels like: {data.current.feelslike_c}&#8451;</p>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
