@@ -40,8 +40,6 @@ function App() {
     getData();
   }, [lat, lon]);
 
-  console.log(data);
-
   return (
     <div className="App">
       <div className="app--container">

@@ -72,3 +72,58 @@ body {
 .small--text {
   font-size: 14px;
 }
+
+@media screen and (max-width: 600px) {
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 3px;
+  }
+
+  .app--container {
+    border-radius: 5px;
+    box-shadow: 1.5px 2.5px 5px rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    min-height: 135px;
+    min-width: 240px;
+  }
+
+  .app--container_info {
+    margin-top: 10px;
+  }
+
+  .app--container_refreshImg {
+    right: 15px;
+    top: 10px;
+  }
+
+  .app--container_refreshImg:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .small--text {
+    font-size: 10px;
+  }
+
+  .app--container_refreshImg {
+    width: 20px;
+  }
+
+  .weather--img {
+    height: 40px;
+  }
+}
